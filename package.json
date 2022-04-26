@@ -1,0 +1,22 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "The Discord Bot was intended for personal use but I decided to upload it to Github to share it with everybody here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rickie457/Discord-Bot.git"
+  },
+  "author": "Rickie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rickie457/Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/Rickie457/Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
