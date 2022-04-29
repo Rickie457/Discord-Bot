@@ -1,45 +1,32 @@
 const Command = require("../Structures/Command.js");
 const Discord = require('discord.js');
-const config = require('../Data/config.json');
+const {prefix} = require('../Data/config.json');
 const ms = require("ms");
 
 module.exports = new Command ({
     name: "remindme",
     description: "remind me to do x",
-    async run(message, client, args){
-        var messageList = message.content.replace(`${config.prefix}remindme`, "");
-        var sendEmbed = true; 
-        if (messageList.length==0){
+    async run(message, args, client){
+        if (args.length==0){
             const reminderFormat = new Discord.MessageEmbed()
-                .setTitle("Da Wae Reminder Command")
-                .setDescription(`Remind yourself to do certain tasks throughout the day, week, or month with ${config.prefix}remindme`)
-                .addFields({name: "Use:",
-                            value: `To use the reminder command, use !reminder, followed by your reminder and time: your-time.\nExample: ${config.prefix}remindme laundry time: 10s`,
+                .setTitle("Reminder Command")
+                .setDescription(`Remind yourself to do certain tasks throughout the day, week, or month with ${prefix}remindme`)
+                .addFields({name: `${prefix}reminder {name} {time}`,
+                            value: `The time parameter must specify seconds (s), minutes (min), hours (hr), etc.\nExample: ${prefix}remindme laundry 10s`,
                             inline: false });
             message.reply({embeds: [reminderFormat]})
-            sendEmbed = false;
         }
-        try {
-            messageList = messageList.trim().split("time:");
-            var task = messageList[0].trim();
-            var time = messageList[1].trim();
-            if (!task && sendEmbed) {
-                sendEmbed = false; 
-                message.reply(`You forgot to enter in your reminder! Please refer to ${config.prefix}remindme for reference.`)
-            }
-        } catch {
-            if (sendEmbed) message.reply(`You forgot to enter in the time correctly! Please refer to ${config.prefix}remindme for reference.`)
-            sendEmbed = false; 
+        else if(args.length < 2 || args.length > 2){
+            message.reply(`Incorrect format! Please refer to ${prefix}remindme for reference.`)
         }
-        if (sendEmbed) {
-            const end_date = Date.now() + ms(time);
+        else {
+            const end_date = Date.now() + ms(args[1]);
             const interval = setInterval(function(){
                 if (Date.now() >= end_date){
-                    message.reply(`Don't forget to do ${task}!`)
+                    message.reply(`Don't forget to do ${args[0]}!`)
                     clearInterval(interval)
                 }
             },1000);
         }
-        //console.log(messageList.length==0)
     }
 });
