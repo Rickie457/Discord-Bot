@@ -17,7 +17,7 @@ Tabikat is a useful bot for every student to stay organized during the academic 
  - **Self-Reminders**: Stay organized throughout the weeks with quick and easy reminders
 
 ## Q & A
-1. Why did you use text commands?
-Personally, I found text commands to be more convenient, especially on servers with multiple bots. It can become a hassle to nagivate through each category for the commands you're looking for on bot populated servers. 
-2. What prompted you to start programming a discord bot? 
+**1. Why did you use text commands?** <br />
+Personally, I found text commands to be more convenient, especially on servers with multiple bots. It can become a hassle to nagivate through each category for the commands you're looking for on bot populated servers. <br /> <br />
+**2. What prompted you to start programming a discord bot?** <br />
 I am usually active on discord throughout the day and one day I just had a thought; if I use this media platform often, I should probably learn a thing or two about it. I was also getting fed up with having to re-enter values on grade calculators once the tab was either closed or accidentally refreshed.
