@@ -1,6 +1,8 @@
 console.clear();
 
-const {token, prefix} = require("./src/Data/config.json");
+const {token, prefix, mongooseConnectionString} = require("./src/Data/config.json");
+
+const mongoose = require("mongoose");
 
 const Client = require("./src/Structures/Client.js")
  
@@ -17,6 +19,15 @@ client.on("messageCreate", message => {
     if (!client.commands.has(command)) return;
 
     client.commands.get(command).run(message, args, client);
+});
+
+mongoose.connect(mongooseConnectionString, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then( () => {
+    console.log("MongoDB is connected!")
+}).catch(err => {
+    console.log(err);
 });
 
 client.start(token);
