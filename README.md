@@ -1,11 +1,23 @@
-# Discord-Bot
+# Discord Bot
 
-The Discord Bot was intended for personal use but I decided to upload it to Github to share it with everybody here. 
+> Tabikat Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=922629536053608508&permissions=274877926400&scope=bot%20applications.commands)
 
-As you can most likely tell, the bot is an interactive messaged-based bot. 
+## Tools Involved
+ - [Discord.js](https://discord.js.org/#/docs/discord.js/stable/general/welcome) v13.6.0
+ - [Node.js](https://nodejs.org/en/docs/) v16.14.1
+ - [MongoDB](https://mongoosejs.com/docs/guide.html) v5.0.7
+ - [Git](https://git-scm.com/downloads) v2.35.1
 
-I made the bot primarily to calculate the weight of my assignments and the grade required for me to pass my courses. While I do know there are grade calculators available online, I found it tedious to have to input the weight, grade, and assignment names each time I re-opened the website, hence, the discord bot to save me the trouble. 
+## Features
+Tabikat is a useful bot for every student to stay organized during the academic year.
+ - **Grade Calculator**: Have your overall mark calculated and stored for you with a few simple clicks
+    - *Add & Delete Courses*: Register the course you are enrolled in
+    - *Add & Delete Assignments*: Add the assignments from your courses
+    - *Target Grades*: Automatically have your target-grade calculated for your courses
+ - **Self-Reminders**: Stay organized throughout the weeks with quick and easy reminders
 
-Since the bot replies with an embed, I can pin the message and view my grades again. And if necessary, I can copy the command, input new values, and calculate my final grade for the course. 
-
-In the future, I do plan to add more commands to the bot for QoL and possibly change to Python. Thanks for viewing!
+## Q & A
+1. Why did you use text commands?
+Personally, I found text commands to be more convenient, especially on servers with multiple bots. It can become a hassle to nagivate through each category for the commands you're looking for on bot populated servers. 
+2. What prompted you to start programming a discord bot? 
+I am usually active on discord throughout the day and one day I just had a thought; if I use this media platform often, I should probably learn a thing or two about it. I was also getting fed up with having to re-enter values on grade calculators once the tab was either closed or accidentally refreshed.
