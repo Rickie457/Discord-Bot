@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Rickie457/Discord-Bot#readme",
   "dependencies": {
-    "discord.js": "^13.6.0"
+    "discord.js": "^13.6.0",
+    "mongoose": "^6.3.1"
   }
 }

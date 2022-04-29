@@ -1,4 +1,5 @@
 {
-    "token": "",
-    "prefix": "!"
+    "token": "OTIyNjI5NTM2MDUzNjA4NTA4.YcEPtw.haMR-OTMJaoI7eObLV8AOiSuu2E",
+    "prefix": "$",
+    "mongooseConnectionString": "mongodb+srv://Quigetsu:CImUOmhqV1QBhjxS@discordbot.qtdy7.mongodb.net/DiscordBotDB?retryWrites=true&w=majority"
 }
