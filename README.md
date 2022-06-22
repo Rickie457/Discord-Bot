@@ -1,6 +1,6 @@
 # Discord Bot
 
-> Tabikat Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=922629536053608508&permissions=274877926400&scope=bot%20applications.commands)
+> Tabikat Bot: [Invite Here](https://discord.com/api/oauth2/authorize?client_id=922629536053608508&permissions=274878056448&scope=bot%20applications.commands)
 
 ## Tools Involved
  - [Discord.js](https://discord.js.org/#/docs/discord.js/stable/general/welcome) v13.6.0
